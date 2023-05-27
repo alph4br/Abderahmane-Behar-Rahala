@@ -1,0 +1,97 @@
+.contact 
+{
+    margin-top: 60px;
+
+    p 
+    {
+        &:first-child
+        {
+            font-size: 0.9em;
+            font-weight: 400;
+            text-decoration: underline;
+            text-decoration-thickness: 0.1px;
+            text-underline-offset: 2px;
+        }
+    }
+
+    form 
+    {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        
+        input, textarea 
+        {
+            border: none;
+            border-radius: 0px;
+            padding: 7px 0px;
+            font-family: Titillium Web;
+            border-bottom: 1px solid white;
+            color: white;
+            background-color: transparent;
+            outline: none;
+            resize: none;
+
+            &::placeholder
+            {
+                color: white;
+                font-weight: 200;
+            }
+        }
+
+        div:nth-child(1)
+        {
+            display: flex;
+            gap: 40px;
+
+            input 
+            {
+                width: 50%;
+            }
+        }
+
+        .submitContainer
+        {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .submit 
+            {
+                cursor: pointer;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                border: 1px solid white;
+                color: white;
+                padding: 1.5px 20px;
+                font-size: 0.75em;
+                font-weight: 200;
+                border-radius: 15px;
+                font-family: Titillium Web;
+
+                &:hover 
+                {
+                    background-color: white;
+                    color: black;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .succes
+        {
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-weight: 300;
+        }
+    }
+}

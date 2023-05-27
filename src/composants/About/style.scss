@@ -1,0 +1,68 @@
+.about 
+{
+    margin-top: 150px;
+
+    p 
+    {
+        &:first-child
+        {
+            font-size: 1.7em;
+
+            span 
+            {
+                font-weight: 600;
+            }
+        }
+
+        &:nth-child(2)
+        {
+            margin-top: -5px;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        &:nth-child(3)
+        {
+            margin-top: 10px;
+            font-size: 0.9em;
+            width: 450px;
+            font-weight: 200;
+
+            @media screen and (max-width: 768px) {
+                width: 380px;
+            }
+
+            @media screen and (max-width: 450px) {
+                width: 300px;
+            }
+        }
+    }
+
+    .socials 
+    {
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        i 
+        {
+            font-size: 1.2em;
+        }
+
+        p 
+        {
+            border: 1px solid white;
+            font-size: 0.8em;
+            padding: 2px 20px;
+            border-radius: 20px;
+
+            &:hover 
+            {
+                cursor: pointer;
+                background: white;
+                color: black;
+            }
+        }
+    }
+}

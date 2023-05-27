@@ -1,0 +1,46 @@
+.header 
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 
+    {
+        font-weight: normal;
+        font-size: 0.9em;
+
+        span 
+        {
+            font-weight: 600;
+        }
+    }
+
+    nav 
+    {
+        ul 
+        {
+            display: flex;
+            gap: 9px;
+            
+            li
+            {
+                list-style: none;
+                font-size: 0.75em;
+                font-weight: 200;
+                cursor: pointer;
+                
+                &:hover 
+                {
+                    text-decoration: underline;
+                    text-decoration-thickness: 0.5px;
+                    text-underline-offset: 2px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
